@@ -1,0 +1,510 @@
+2026-06-18 13:04:26,322 | INFO | main.py | 216 | Iniciando rotina de envio...
+2026-06-18 13:04:26,656 | INFO | main.py | 94 | Buscando contatos no Supabase...
+2026-06-18 13:04:26,912 | DEBUG | _trace.py | 47 | connect_tcp.started host='eigkxlfqkkorkxzxoxge.supabase.co' port=443 local_address=None timeout=120 socket_options=None
+2026-06-18 13:04:27,040 | DEBUG | _trace.py | 47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CA04C563C0>
+2026-06-18 13:04:27,040 | DEBUG | _trace.py | 47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CA039E3C70> server_hostname='eigkxlfqkkorkxzxoxge.supabase.co' timeout=120
+2026-06-18 13:04:27,090 | DEBUG | _trace.py | 47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CA04C460D0>
+2026-06-18 13:04:27,091 | DEBUG | _trace.py | 47 | send_connection_init.started request=<Request [b'GET']>
+2026-06-18 13:04:27,091 | DEBUG | _trace.py | 47 | send_connection_init.complete
+2026-06-18 13:04:27,091 | DEBUG | _trace.py | 47 | send_request_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 2 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b':authority', b'eigkxlfqkkorkxzxoxge.supabase.co') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 1 with 6 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 24 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 7 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b':path', b'/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 4 with 6 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 48 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 19 with 6 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 3 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 16 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 58 with 6 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 53 | Encoding 14 with 7 bits
+2026-06-18 13:04:27,091 | DEBUG | hpack.py | 288 | Adding (b'x-client-info', b'supabase-py/2.31.0; platform=Windows; platform-version=11; runtime=python; runtime-version=3.14.0') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 70 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 288 | Adding (b'apikey', b'sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 36 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 288 | Adding (b'authorization', b'Bearer sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:True, huffman:True
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 23 with 4 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 41 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 288 | Adding (b'accept-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 288 | Adding (b'content-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 11 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:04:27,092 | DEBUG | hpack.py | 280 | Encoded header block to b"\x82A\x98)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef*\xe8\xb6\xb1\xc64\x15r\x1f\x87D\xb0b\xc2\xa1,w\x0b\x04=I\x1aN\x8f\xf1\x05\xa0\xa4L\x06\x91Q^\xa8\xf4\x95Q^Ih,\xa7\xa8\xaa\x8a\xf0\xd2n\xe7\xf8\x1aM\xdc\xf0\x17\xb2\xfb\xec\xb4\xbfS\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\xc6E\xb5\x8e1\xa0\xabW\xe9\x81.\xc8W\x07\xda\x95\xd04\xca{)\x83\x91\xaa\x90\xfe\x11\xf6\xa5t\r2\x9e\xcaV\xee[\x10c\xd5\x00C\xf6\xa5\x96\xd4\x93RX+\xf4\x99\xcfW\xda\x96[RMIV\xee[\x10c\xd5\x03+\x85\xa5\xc1@\x85\x1df\xea__\xa4DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff\x1f\x08\xa9\xbaQ\xd8[\x14DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff@\x8a\x19\x08Z\xd2\xb5v\x1eSP_\x85\xae\xd8\xe81?@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?"
+2026-06-18 13:04:27,092 | DEBUG | _trace.py | 47 | send_request_headers.complete
+2026-06-18 13:04:27,092 | DEBUG | _trace.py | 47 | send_request_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:04:27,092 | DEBUG | _trace.py | 47 | send_request_body.complete
+2026-06-18 13:04:27,092 | DEBUG | _trace.py | 47 | receive_response_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:04:27,140 | DEBUG | _trace.py | 47 | receive_remote_settings.started
+2026-06-18 13:04:27,140 | DEBUG | _trace.py | 47 | receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2026-06-18 13:04:27,651 | DEBUG | hpack.py | 474 | Decoding b'?\xe1\x1f\x88a\x96\xdf=\xbfJ\x05\xe52\xdbR\x82\x00\x9cP.\\\x03W\x04\xea\x98\xb4o_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{^\x84\x02\xc2c\xe7@\x85$\xabX?_\x8f\x18$\x8d\xe7F\xe4\x83\x967\xa3u\xf5\xb1d\xc5@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xab]\xaa`\x87\xa9#I\xd1\xfe\r&\xeex\x0b\xd9}\xf6Z_\x84\x16\x82\x910\x1aEEz\xa3\xd2UEy%\xa0\xb2\x9e\xa2\xaa+\xc3I\xbb\x9fv\x87%\x07\xb6Ih\x1d\x85x\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x8b\x84\x84-i[\x05D<\x86\xaao@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef/@\x8aDkX^\xd6\x95\tX\xd2\x7f\x9a\x00_,\x91\xba5\x80\xd3O\xac\xe8\x9e\n\xcf\x06GVy\xc9J\xf4bi\xc6\x9ek@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x82\x13\x81w\xffn\x8a"K\x14t\xc0\xcb\x91\xd9\xcbD\xc5\xafc\xfa\xa7\xc8\x1fl\xfb\xdd\xfb/\xbd\xb8m\x88\xb9\xc1\x0e)u\x83\xf7n\x90\x17\x058\xfc,\x17^\x0b\xaf\xbc\xe3\x8e\xae\xcb-8\x16\x9bX+\x81p\xae\x15\xaf\xb3\x7f\x11\xf4\xe77\x0f\xdd\xf8\xb6L\xf5\x93\xc3W}9\xc1\x15\xd1~M\xce\xecQ>I\xfc\xf3\xec\xc8\xafd\x9fFY\xdb\xc5\xfb\x8d\xba\xd3t\x1d\xf3\xdd\xf1\x8b\xde\xc4w/\x17\xc5d\xadr\xd3\xbf5\xa3\x1f*\x93\x1b\x9b7s\xe2\xecV\xe6\xddU"\xd3V\xf4]\x9cC.\xd2\xe5\xdf\x7f\xcf\xbc\xb7u\x08n\xe5\xd6\x94\xef5\xe1U#\xdfjcJk\xd5U\x1e\xbe\xd4\xdc:K\xb8\xc9,\x1aOQ~\xd4\xdcR[a~\xd4\xd64\xcf\x03\x1fj_=#5P"\xda\xc7\x18\xd0U\xc8\x7f\xb50y\xac\xd6\x15\x10o\x9e\xdf\xa5\x02\xf2\x99m\xa9A\x00N(\x17.2\xd5\xc1:\xa6-\x1b\xff@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 4096, consumed 3 bytes
+2026-06-18 13:04:27,652 | DEBUG | table.py | 201 | Resizing header table to 4096 from 4096
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 8, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 569 | Decoded (b':status', b'200'), consumed 1
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 33, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'date', b'Thu, 18 Jun 2026 16:04:27 GMT'), total consumed 24 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 31, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 30, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 4, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'content-range', b'0-2/*'), total consumed 6 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'cf-ray', b'a0db87a6dafb8b79-GIG'), total consumed 23 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 6, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 3, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 29, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 42, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), total consumed 44 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 54, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 7, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 56, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 32, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 59, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 647 | Decoded (b'vary', b'Accept-Encoding'), total consumed 13 bytes, indexed True
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:04:27,652 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'content-profile', b'public'), total consumed 19 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 13, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'sb-gateway-version', <memory at 0x000001CA04BBD3C0>), total consumed 17 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), total consumed 29 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'sb-request-id', b'019edb7a-0449-7281-81d7-86fe8b246484'), total consumed 39 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-attempt-count', <memory at 0x000001CA04BBD840>), total consumed 19 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 21, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 2, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-upstream-service-time', b'261'), total consumed 26 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 55, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 237, consumed 2 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'set-cookie', b'__cf_bm=36brWMgepQ9OhI1z3zSZfzRFu_eL0AGfP0ZRN0eEmHw-1781798667.3346145-1.0.1.1-D3DGoNLiUZTGQg8rhAnvNL0_B2XgYB__9chxYq32CIhMJh5GZH5ptB0vLBwGzQsveV92rf4WNTKuaaWntb6QSYV7_uKSnm2NnTsBh2aeReJTDxzJBO2a7JPttTiC2nd8; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:34:27 GMT'), total consumed 240 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:04:27,653 | DEBUG | hpack.py | 647 | Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2026-06-18 13:04:27,653 | DEBUG | _trace.py | 47 | receive_response_headers.complete return_value=(200, [(b'date', b'Thu, 18 Jun 2026 16:04:27 GMT'), (b'content-type', b'application/json; charset=utf-8'), (b'content-range', b'0-2/*'), (b'cf-ray', b'a0db87a6dafb8b79-GIG'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), (b'server', b'cloudflare'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Accept-Encoding'), (b'x-content-type-options', b'nosniff'), (b'content-profile', b'public'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), (b'sb-request-id', b'019edb7a-0449-7281-81d7-86fe8b246484'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'261'), (b'set-cookie', b'__cf_bm=36brWMgepQ9OhI1z3zSZfzRFu_eL0AGfP0ZRN0eEmHw-1781798667.3346145-1.0.1.1-D3DGoNLiUZTGQg8rhAnvNL0_B2XgYB__9chxYq32CIhMJh5GZH5ptB0vLBwGzQsveV92rf4WNTKuaaWntb6QSYV7_uKSnm2NnTsBh2aeReJTDxzJBO2a7JPttTiC2nd8; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:34:27 GMT'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-06-18 13:04:27,654 | INFO | _client.py | 1025 | HTTP Request: GET https://eigkxlfqkkorkxzxoxge.supabase.co/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True "HTTP/2 200 OK"
+2026-06-18 13:04:27,654 | DEBUG | _trace.py | 47 | receive_response_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:04:27,655 | DEBUG | _trace.py | 47 | receive_response_body.complete
+2026-06-18 13:04:27,655 | DEBUG | _trace.py | 47 | response_closed.started stream_id=1
+2026-06-18 13:04:27,655 | DEBUG | _trace.py | 47 | response_closed.complete
+2026-06-18 13:04:27,658 | INFO | main.py | 132 | Total de contatos selecionados: 3
+2026-06-18 13:04:27,658 | INFO | main.py | 144 | Verificando status da instï¿½ncia Z-API...
+2026-06-18 13:04:27,661 | DEBUG | connectionpool.py | 1049 | Starting new HTTPS connection (1): api.z-api.io:443
+2026-06-18 13:04:28,211 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "GET /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status HTTP/1.1" 403 41
+2026-06-18 13:04:28,212 | ERROR | main.py | 163 | Falha ao consultar status da Z-API: 403 Client Error: Forbidden for url: https://api.z-api.io/instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status
+2026-06-18 13:04:28,212 | ERROR | main.py | 230 | A instï¿½ncia Z-API nï¿½o estï¿½ conectada. Conecte o WhatsApp e tente novamente.
+2026-06-18 13:05:52,005 | INFO | main.py | 216 | Iniciando rotina de envio...
+2026-06-18 13:05:52,326 | INFO | main.py | 94 | Buscando contatos no Supabase...
+2026-06-18 13:05:52,554 | DEBUG | _trace.py | 47 | connect_tcp.started host='eigkxlfqkkorkxzxoxge.supabase.co' port=443 local_address=None timeout=120 socket_options=None
+2026-06-18 13:05:52,675 | DEBUG | _trace.py | 47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024E665C63C0>
+2026-06-18 13:05:52,675 | DEBUG | _trace.py | 47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024E652F3C70> server_hostname='eigkxlfqkkorkxzxoxge.supabase.co' timeout=120
+2026-06-18 13:05:52,728 | DEBUG | _trace.py | 47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024E665B60D0>
+2026-06-18 13:05:52,728 | DEBUG | _trace.py | 47 | send_connection_init.started request=<Request [b'GET']>
+2026-06-18 13:05:52,728 | DEBUG | _trace.py | 47 | send_connection_init.complete
+2026-06-18 13:05:52,729 | DEBUG | _trace.py | 47 | send_request_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 2 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b':authority', b'eigkxlfqkkorkxzxoxge.supabase.co') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 1 with 6 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 24 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 7 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b':path', b'/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 4 with 6 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 48 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 19 with 6 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 3 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 16 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 58 with 6 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 14 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'x-client-info', b'supabase-py/2.31.0; platform=Windows; platform-version=11; runtime=python; runtime-version=3.14.0') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 70 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'apikey', b'sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 36 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'authorization', b'Bearer sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:True, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 23 with 4 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 41 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'accept-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 288 | Adding (b'content-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 11 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:05:52,729 | DEBUG | hpack.py | 280 | Encoded header block to b"\x82A\x98)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef*\xe8\xb6\xb1\xc64\x15r\x1f\x87D\xb0b\xc2\xa1,w\x0b\x04=I\x1aN\x8f\xf1\x05\xa0\xa4L\x06\x91Q^\xa8\xf4\x95Q^Ih,\xa7\xa8\xaa\x8a\xf0\xd2n\xe7\xf8\x1aM\xdc\xf0\x17\xb2\xfb\xec\xb4\xbfS\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\xc6E\xb5\x8e1\xa0\xabW\xe9\x81.\xc8W\x07\xda\x95\xd04\xca{)\x83\x91\xaa\x90\xfe\x11\xf6\xa5t\r2\x9e\xcaV\xee[\x10c\xd5\x00C\xf6\xa5\x96\xd4\x93RX+\xf4\x99\xcfW\xda\x96[RMIV\xee[\x10c\xd5\x03+\x85\xa5\xc1@\x85\x1df\xea__\xa4DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff\x1f\x08\xa9\xbaQ\xd8[\x14DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff@\x8a\x19\x08Z\xd2\xb5v\x1eSP_\x85\xae\xd8\xe81?@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?"
+2026-06-18 13:05:52,730 | DEBUG | _trace.py | 47 | send_request_headers.complete
+2026-06-18 13:05:52,730 | DEBUG | _trace.py | 47 | send_request_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:05:52,730 | DEBUG | _trace.py | 47 | send_request_body.complete
+2026-06-18 13:05:52,730 | DEBUG | _trace.py | 47 | receive_response_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:05:52,776 | DEBUG | _trace.py | 47 | receive_remote_settings.started
+2026-06-18 13:05:52,777 | DEBUG | _trace.py | 47 | receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2026-06-18 13:05:52,894 | DEBUG | hpack.py | 474 | Decoding b'?\xe1\x1f\x88a\x97\xdf=\xbfJ\x05\xe52\xdbR\x82\x00\x9cP.\\\x03w\x1beLZ7\xff_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{^\x84\x02\xc2c\xe7@\x85$\xabX?_\x8f\x18$\x8d\xe7\xe3(_zYZ\tV\xc5\x93\x17@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xab]\xaa`\x87\xa9#I\xd1\xfe\r&\xeex\x0b\xd9}\xf6Z_\x84\x16\x82\x910\x1aEEz\xa3\xd2UEy%\xa0\xb2\x9e\xa2\xaa+\xc3I\xbb\x9fv\x87%\x07\xb6Ih\x1d\x85x\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x8b\x84\x84-i[\x05D<\x86\xaao@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef/@\x8aDkX^\xd6\x95\tX\xd2\x7f\x9a\x00_,\x91\xbb\x1a\xcd\x8aF\xd6t\xb2\x95h\xdfm\xb5\x9d\x0baxQ\x94B\x96_@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x0284w\xffm\x8a"K\x14t\xc0.\x83\xfd\xe9^\x8eZ\xf7f\xed\xd9\x9fU3\xc4[\xb4\xf7\xe9\xcaL\x12t\xd4?B~\xbc\xbbt{j\xf0\\\xc0\xb0]x.\xbe\xf3\xad\x89w\xddm\xa7\xdcX+\x81p\xae\x15\xbd`\xf5>\xba\xf5\xeb\xb3t\xe6.>\xfa;n\xf0V\xf9\xf0\\o\xc6\x0c\xefu\x8b\xdf\xac+\x97\x137\xfb\x06W\xdfj\x8eS\xc6`s\xb4~|\xbc5\xcc\xf6Z"\xccl\xae\x04\xfch\xbf6=\x1b\xc3\xbak\xe1\xbe\xbd\x1c\xc1\x17\x0e-f\x1d\xa3\xf4\xf7\xe5?\xaeV\x7fd\xcdV\xef\x06\x02\xf7_\x8a}\x1b\t\xf8}\x8d\xd0\xeb8\xbe\xd4\xc6\x94\xd7\xaa\xaa=}\xa9\xb8t\x97q\x92X4\x9e\xa2\xfd\xa9\xb8\xa4\xb6\xc2\xfd\xa9\xaci\x9e\x06>\xd4\xbezFj\xa0E\xb5\x8e1\xa0\xab\x90\xffj`\xf3Y\xac* \xdf=\xbfJ\x05\xe52\xdbR\x82\x00\x9cP.\\e\xbb\x8d\xb2\xa6-\x1b\xff@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 4096, consumed 3 bytes
+2026-06-18 13:05:52,895 | DEBUG | table.py | 201 | Resizing header table to 4096 from 4096
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 8, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 569 | Decoded (b':status', b'200'), consumed 1
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 33, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 23, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'date', b'Thu, 18 Jun 2026 16:05:53 GMT'), total consumed 25 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 31, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 30, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 4, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'content-range', b'0-2/*'), total consumed 6 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'cf-ray', b'a0db89be198ff41e-GIG'), total consumed 23 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 6, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 3, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 29, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 42, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), total consumed 44 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 54, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 7, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 56, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 32, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 59, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'vary', b'Accept-Encoding'), total consumed 13 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:05:52,895 | DEBUG | hpack.py | 647 | Decoded (b'content-profile', b'public'), total consumed 19 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 13, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'sb-gateway-version', <memory at 0x0000024E6652D3C0>), total consumed 17 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), total consumed 29 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'sb-request-id', b'019edb7b-52d5-7efe-b955-715182be22ff'), total consumed 39 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-attempt-count', <memory at 0x0000024E6652D840>), total consumed 19 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 21, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 2, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-upstream-service-time', <memory at 0x0000024E6652D600>), total consumed 26 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 55, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 236, consumed 2 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'set-cookie', b'__cf_bm=2jaZjpMWPSKqq3yn3V2SNvjWdEdjOay29pJRMz4C16E-1781798752.975496-1.0.1.1-yEyhPpPPrShieHvMqSwe5YU.a9b0L8k_zyF.eG3Dq1f994lWhbi0Yuaxx8a.i8Jl_KiJ61oVlDgHMT1SgD1D.lY0_UV4Kauay8XmZ6pozcKnSwi0.B9_hMQcXoQ5l73G; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:35:53 GMT'), total consumed 239 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:05:52,896 | DEBUG | hpack.py | 647 | Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2026-06-18 13:05:52,896 | DEBUG | _trace.py | 47 | receive_response_headers.complete return_value=(200, [(b'date', b'Thu, 18 Jun 2026 16:05:53 GMT'), (b'content-type', b'application/json; charset=utf-8'), (b'content-range', b'0-2/*'), (b'cf-ray', b'a0db89be198ff41e-GIG'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), (b'server', b'cloudflare'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Accept-Encoding'), (b'x-content-type-options', b'nosniff'), (b'content-profile', b'public'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), (b'sb-request-id', b'019edb7b-52d5-7efe-b955-715182be22ff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'84'), (b'set-cookie', b'__cf_bm=2jaZjpMWPSKqq3yn3V2SNvjWdEdjOay29pJRMz4C16E-1781798752.975496-1.0.1.1-yEyhPpPPrShieHvMqSwe5YU.a9b0L8k_zyF.eG3Dq1f994lWhbi0Yuaxx8a.i8Jl_KiJ61oVlDgHMT1SgD1D.lY0_UV4Kauay8XmZ6pozcKnSwi0.B9_hMQcXoQ5l73G; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:35:53 GMT'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-06-18 13:05:52,897 | INFO | _client.py | 1025 | HTTP Request: GET https://eigkxlfqkkorkxzxoxge.supabase.co/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True "HTTP/2 200 OK"
+2026-06-18 13:05:52,897 | DEBUG | _trace.py | 47 | receive_response_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:05:52,897 | DEBUG | _trace.py | 47 | receive_response_body.complete
+2026-06-18 13:05:52,897 | DEBUG | _trace.py | 47 | response_closed.started stream_id=1
+2026-06-18 13:05:52,897 | DEBUG | _trace.py | 47 | response_closed.complete
+2026-06-18 13:05:52,897 | INFO | main.py | 132 | Total de contatos selecionados: 3
+2026-06-18 13:05:52,898 | INFO | main.py | 144 | Verificando status da instï¿½ncia Z-API...
+2026-06-18 13:05:52,900 | DEBUG | connectionpool.py | 1049 | Starting new HTTPS connection (1): api.z-api.io:443
+2026-06-18 13:05:53,337 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "GET /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status HTTP/1.1" 200 122
+2026-06-18 13:05:53,337 | INFO | main.py | 154 | Z-API status | connected=True | smartphoneConnected=True | detail=You are already connected.
+2026-06-18 13:05:53,337 | INFO | main.py | 240 | Enviando mensagem para Joyciane Cavalcante (5585996633730)...
+2026-06-18 13:05:53,399 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 112
+2026-06-18 13:05:53,400 | INFO | main.py | 245 | Envio OK para 5585996633730 | resposta={'zaapId': '019EDB7B553B7ECF9B605CE956F84544', 'messageId': '3EB0F363F509D179F7C42D', 'id': '3EB0F363F509D179F7C42D'}
+2026-06-18 13:05:53,400 | INFO | main.py | 240 | Enviando mensagem para Wesley Corpes (5598984250605)...
+2026-06-18 13:05:53,460 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 112
+2026-06-18 13:05:53,460 | INFO | main.py | 245 | Envio OK para 5598984250605 | resposta={'zaapId': '019EDB7B55777B8B8BE5D51FF214140F', 'messageId': '3EB0361018C65D81E05C44', 'id': '3EB0361018C65D81E05C44'}
+2026-06-18 13:05:53,460 | INFO | main.py | 240 | Enviando mensagem para Elton Morais (5585920015464)...
+2026-06-18 13:05:53,520 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 112
+2026-06-18 13:05:53,521 | INFO | main.py | 245 | Envio OK para 5585920015464 | resposta={'zaapId': '019EDB7B55B4753DB423248F64D2DFFC', 'messageId': '3EB09A3B80521AAE07379F', 'id': '3EB09A3B80521AAE07379F'}
+2026-06-18 13:05:53,521 | INFO | main.py | 254 | Processo finalizado. Total enviado com sucesso: 3
+2026-06-18 13:12:52,646 | INFO | main.py | 216 | Iniciando rotina de envio...
+2026-06-18 13:12:52,962 | INFO | main.py | 94 | Buscando contatos no Supabase...
+2026-06-18 13:12:53,195 | DEBUG | _trace.py | 47 | connect_tcp.started host='eigkxlfqkkorkxzxoxge.supabase.co' port=443 local_address=None timeout=120 socket_options=None
+2026-06-18 13:12:53,372 | DEBUG | _trace.py | 47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F375C163C0>
+2026-06-18 13:12:53,372 | DEBUG | _trace.py | 47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F3749A3C70> server_hostname='eigkxlfqkkorkxzxoxge.supabase.co' timeout=120
+2026-06-18 13:12:53,424 | DEBUG | _trace.py | 47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F375C060D0>
+2026-06-18 13:12:53,424 | DEBUG | _trace.py | 47 | send_connection_init.started request=<Request [b'GET']>
+2026-06-18 13:12:53,425 | DEBUG | _trace.py | 47 | send_connection_init.complete
+2026-06-18 13:12:53,425 | DEBUG | _trace.py | 47 | send_request_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 2 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b':authority', b'eigkxlfqkkorkxzxoxge.supabase.co') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 1 with 6 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 24 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 7 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b':path', b'/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 4 with 6 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 48 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 19 with 6 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 3 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 16 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 58 with 6 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 14 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'x-client-info', b'supabase-py/2.31.0; platform=Windows; platform-version=11; runtime=python; runtime-version=3.14.0') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 70 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'apikey', b'sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 36 with 7 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 288 | Adding (b'authorization', b'Bearer sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:True, huffman:True
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 23 with 4 bits
+2026-06-18 13:12:53,425 | DEBUG | hpack.py | 53 | Encoding 41 with 7 bits
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 288 | Adding (b'accept-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 288 | Adding (b'content-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 53 | Encoding 11 with 7 bits
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:12:53,426 | DEBUG | hpack.py | 280 | Encoded header block to b"\x82A\x98)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef*\xe8\xb6\xb1\xc64\x15r\x1f\x87D\xb0b\xc2\xa1,w\x0b\x04=I\x1aN\x8f\xf1\x05\xa0\xa4L\x06\x91Q^\xa8\xf4\x95Q^Ih,\xa7\xa8\xaa\x8a\xf0\xd2n\xe7\xf8\x1aM\xdc\xf0\x17\xb2\xfb\xec\xb4\xbfS\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\xc6E\xb5\x8e1\xa0\xabW\xe9\x81.\xc8W\x07\xda\x95\xd04\xca{)\x83\x91\xaa\x90\xfe\x11\xf6\xa5t\r2\x9e\xcaV\xee[\x10c\xd5\x00C\xf6\xa5\x96\xd4\x93RX+\xf4\x99\xcfW\xda\x96[RMIV\xee[\x10c\xd5\x03+\x85\xa5\xc1@\x85\x1df\xea__\xa4DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff\x1f\x08\xa9\xbaQ\xd8[\x14DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff@\x8a\x19\x08Z\xd2\xb5v\x1eSP_\x85\xae\xd8\xe81?@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?"
+2026-06-18 13:12:53,426 | DEBUG | _trace.py | 47 | send_request_headers.complete
+2026-06-18 13:12:53,426 | DEBUG | _trace.py | 47 | send_request_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:12:53,426 | DEBUG | _trace.py | 47 | send_request_body.complete
+2026-06-18 13:12:53,426 | DEBUG | _trace.py | 47 | receive_response_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:12:53,470 | DEBUG | _trace.py | 47 | receive_remote_settings.started
+2026-06-18 13:12:53,470 | DEBUG | _trace.py | 47 | receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 474 | Decoding b'?\xe1\x1f\x88a\x96\xdf=\xbfJ\x05\xe52\xdbR\x82\x00\x9cP.\\\x08\xae6\xd2\x98\xb4o_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{^\x84\x02\xc2c\xe7@\x85$\xabX?_\x8f\x18$\x8d\xf6\x80\xcb\xa3\x0b\xe4\x1c\x83[\x16L_@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xab]\xaa`\x87\xa9#I\xd1\xfe\r&\xeex\x0b\xd9}\xf6Z_\x84\x16\x82\x910\x1aEEz\xa3\xd2UEy%\xa0\xb2\x9e\xa2\xaa+\xc3I\xbb\x9fv\x87%\x07\xb6Ih\x1d\x85x\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x8b\x84\x84-i[\x05D<\x86\xaao@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef/@\x8aDkX^\xd6\x95\tX\xd2\x7f\x9a\x00_,\x91\xbc\x15\xa3+!Y\xd7\xa5\n\xd1\xb8\xfb\xeb\n7\xc1(H\xcb\xed\xbc/@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x0287w\xffo\x8a"K\x14t\xc1\x9e\x96\xfa]\xdd~|\xb6\xf9\xd9\xb2\xce\xd1\xbf\x10\xb0c\xe3\x19\xb5\xfbE\xf0\x0b^||\xec\xcf\xc3\xd4/\x14=V\x0b\xaf\x05\xd7\xdf\x0b\xac\xae\xe3\xad\x89\xa7\xdcX+\x81p\xae\x15\x99\xab\x06\xfe\xc4\xcb5\xecc\xbb\xd6sd\xd9=\x96P\x9cO\xee\x1e\x04g\xfc\xd3\xfa\xcf\xea\x11L\xc8N\xf9\xb1\xd4\xee\x0f}\xb1\xde\x1c\xd3Q\x96\x1d\x03\xf5\xfb\x87\xd4\x8dOK\xb7\xf4\xafcn\xe7\x07\xe5\xff\x16N\xbe\xcfu]n\x8c\xb1`\xb4\x19\xf8\xf9\xaeIS\'"c\x7f>mY{\xfe5\xce\xff:\xee\x92\xc8\xbb\xb27xm\xe3\xbbO\xda\x98\xd2\x9a\xf5UG\xaf\xb57\x0e\x92\xee2K\x06\x93\xd4_\xb57\x14\x96\xd8_\xb55\x8d3\xc0\xc7\xda\x97\xcfH\xcdT\x08\xb6\xb1\xc64\x15r\x1f\xedL\x1ek5\x85D\x1b\xe7\xb7\xe9@\xbc\xa6[jP@\x13\x8a\x05\xcb\x8d\n\xe3m)\x8bF\xff@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 4096, consumed 3 bytes
+2026-06-18 13:12:54,041 | DEBUG | table.py | 201 | Resizing header table to 4096 from 4096
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 8, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 569 | Decoded (b':status', b'200'), consumed 1
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 33, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'date', b'Thu, 18 Jun 2026 16:12:54 GMT'), total consumed 24 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 31, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 30, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 4, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'content-range', b'0-2/*'), total consumed 6 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'cf-ray', b'a0db94037a19cada-GIG'), total consumed 23 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 6, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 3, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 29, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 42, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), total consumed 44 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 54, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 7, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 56, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 32, consumed 1 bytes
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 647 | Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2026-06-18 13:12:54,041 | DEBUG | hpack.py | 113 | Decoded 59, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'vary', b'Accept-Encoding'), total consumed 13 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'content-profile', b'public'), total consumed 19 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 13, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'sb-gateway-version', <memory at 0x000001F375B813C0>), total consumed 17 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), total consumed 29 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'sb-request-id', b'019edb81-be31-78f1-b699-2b90f1c39582'), total consumed 39 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-attempt-count', <memory at 0x000001F375B81840>), total consumed 19 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 21, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 2, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-upstream-service-time', <memory at 0x000001F375B81600>), total consumed 26 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 55, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 238, consumed 2 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'set-cookie', b'__cf_bm=Lm5jBSDhJuxQQrqb9_2EHVbiPzsD02PLHYrLUyA8e1k-1781799173.6752496-1.0.1.1-3nETqcJgCHaBkhiIQhrrltG9SaEsLXNZ3ZssmgstTgHn7EzqHCagglJAMayZFyd4hm7DN.r57L0XDwrh.QznB5lJ_Eu0LVxpdftdWcH9LKOJvX4YDYpBcr_v3a7URVSN; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:42:54 GMT'), total consumed 241 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:12:54,042 | DEBUG | hpack.py | 647 | Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2026-06-18 13:12:54,042 | DEBUG | _trace.py | 47 | receive_response_headers.complete return_value=(200, [(b'date', b'Thu, 18 Jun 2026 16:12:54 GMT'), (b'content-type', b'application/json; charset=utf-8'), (b'content-range', b'0-2/*'), (b'cf-ray', b'a0db94037a19cada-GIG'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), (b'server', b'cloudflare'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Accept-Encoding'), (b'x-content-type-options', b'nosniff'), (b'content-profile', b'public'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), (b'sb-request-id', b'019edb81-be31-78f1-b699-2b90f1c39582'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'87'), (b'set-cookie', b'__cf_bm=Lm5jBSDhJuxQQrqb9_2EHVbiPzsD02PLHYrLUyA8e1k-1781799173.6752496-1.0.1.1-3nETqcJgCHaBkhiIQhrrltG9SaEsLXNZ3ZssmgstTgHn7EzqHCagglJAMayZFyd4hm7DN.r57L0XDwrh.QznB5lJ_Eu0LVxpdftdWcH9LKOJvX4YDYpBcr_v3a7URVSN; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:42:54 GMT'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-06-18 13:12:54,043 | INFO | _client.py | 1025 | HTTP Request: GET https://eigkxlfqkkorkxzxoxge.supabase.co/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True "HTTP/2 200 OK"
+2026-06-18 13:12:54,043 | DEBUG | _trace.py | 47 | receive_response_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:12:54,043 | DEBUG | _trace.py | 47 | receive_response_body.complete
+2026-06-18 13:12:54,043 | DEBUG | _trace.py | 47 | response_closed.started stream_id=1
+2026-06-18 13:12:54,043 | DEBUG | _trace.py | 47 | response_closed.complete
+2026-06-18 13:12:54,043 | INFO | main.py | 132 | Total de contatos selecionados: 3
+2026-06-18 13:12:54,044 | INFO | main.py | 144 | Verificando status da instância Z-API...
+2026-06-18 13:12:54,045 | DEBUG | connectionpool.py | 1049 | Starting new HTTPS connection (1): api.z-api.io:443
+2026-06-18 13:12:54,485 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "GET /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status HTTP/1.1" 403 41
+2026-06-18 13:12:54,486 | ERROR | main.py | 163 | Falha ao consultar status da Z-API: 403 Client Error: Forbidden for url: https://api.z-api.io/instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status
+2026-06-18 13:12:54,486 | ERROR | main.py | 230 | A instância Z-API não está conectada. Conecte o WhatsApp e tente novamente.
+2026-06-18 13:13:20,426 | INFO | main.py | 216 | Iniciando rotina de envio...
+2026-06-18 13:13:20,842 | INFO | main.py | 94 | Buscando contatos no Supabase...
+2026-06-18 13:13:21,079 | DEBUG | _trace.py | 47 | connect_tcp.started host='eigkxlfqkkorkxzxoxge.supabase.co' port=443 local_address=None timeout=120 socket_options=None
+2026-06-18 13:13:21,255 | DEBUG | _trace.py | 47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002440D3263C0>
+2026-06-18 13:13:21,256 | DEBUG | _trace.py | 47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000002440C0B3C70> server_hostname='eigkxlfqkkorkxzxoxge.supabase.co' timeout=120
+2026-06-18 13:13:21,307 | DEBUG | _trace.py | 47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002440D3160D0>
+2026-06-18 13:13:21,308 | DEBUG | _trace.py | 47 | send_connection_init.started request=<Request [b'GET']>
+2026-06-18 13:13:21,308 | DEBUG | _trace.py | 47 | send_connection_init.complete
+2026-06-18 13:13:21,308 | DEBUG | _trace.py | 47 | send_request_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 288 | Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 2 with 7 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 288 | Adding (b':authority', b'eigkxlfqkkorkxzxoxge.supabase.co') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 1 with 6 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 24 with 7 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 288 | Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 7 with 7 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 288 | Adding (b':path', b'/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 4 with 6 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 48 with 7 bits
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 288 | Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,308 | DEBUG | hpack.py | 53 | Encoding 19 with 6 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 3 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 16 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 58 with 6 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 14 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'x-client-info', b'supabase-py/2.31.0; platform=Windows; platform-version=11; runtime=python; runtime-version=3.14.0') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 70 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'apikey', b'sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 36 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'authorization', b'Bearer sb_publishable_rnjz7eVbjmNTrX60pfYm4g_ZQohLWpp') to the header table, sensitive:True, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 23 with 4 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 41 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'accept-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 10 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 288 | Adding (b'content-profile', b'public') to the header table, sensitive:False, huffman:True
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 11 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 53 | Encoding 5 with 7 bits
+2026-06-18 13:13:21,309 | DEBUG | hpack.py | 280 | Encoded header block to b"\x82A\x98)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef*\xe8\xb6\xb1\xc64\x15r\x1f\x87D\xb0b\xc2\xa1,w\x0b\x04=I\x1aN\x8f\xf1\x05\xa0\xa4L\x06\x91Q^\xa8\xf4\x95Q^Ih,\xa7\xa8\xaa\x8a\xf0\xd2n\xe7\xf8\x1aM\xdc\xf0\x17\xb2\xfb\xec\xb4\xbfS\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\xc6E\xb5\x8e1\xa0\xabW\xe9\x81.\xc8W\x07\xda\x95\xd04\xca{)\x83\x91\xaa\x90\xfe\x11\xf6\xa5t\r2\x9e\xcaV\xee[\x10c\xd5\x00C\xf6\xa5\x96\xd4\x93RX+\xf4\x99\xcfW\xda\x96[RMIV\xee[\x10c\xd5\x03+\x85\xa5\xc1@\x85\x1df\xea__\xa4DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff\x1f\x08\xa9\xbaQ\xd8[\x14DqWlt\x19\x13\x8e:\x0b\x15\x95t\xf6\xe9x\xc7\xd2\x9d;\xec\xfcp\x15\xcb\xce\x96\xa6\x8b\xf7a\xe7\xcf\xca\xba\xff@\x8a\x19\x08Z\xd2\xb5v\x1eSP_\x85\xae\xd8\xe81?@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?"
+2026-06-18 13:13:21,310 | DEBUG | _trace.py | 47 | send_request_headers.complete
+2026-06-18 13:13:21,310 | DEBUG | _trace.py | 47 | send_request_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:13:21,310 | DEBUG | _trace.py | 47 | send_request_body.complete
+2026-06-18 13:13:21,310 | DEBUG | _trace.py | 47 | receive_response_headers.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:13:21,353 | DEBUG | _trace.py | 47 | receive_remote_settings.started
+2026-06-18 13:13:21,354 | DEBUG | _trace.py | 47 | receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 474 | Decoding b'?\xe1\x1f\x88a\x96\xdf=\xbfJ\x05\xe52\xdbR\x82\x00\x9cP.\\\x0b7\x04\x151h\xdf_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{^\x84\x02\xc2c\xe7@\x85$\xabX?_\x8f\x18$\x8d\xf6\xa3\x0cr\xb4\xe0\x1c\x1b+b\xc9\x8b@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xab]\xaa`\x87\xa9#I\xd1\xfe\r&\xeex\x0b\xd9}\xf6Z_\x84\x16\x82\x910\x1aEEz\xa3\xd2UEy%\xa0\xb2\x9e\xa2\xaa+\xc3I\xbb\x9fv\x87%\x07\xb6Ih\x1d\x85x\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x8b\x84\x84-i[\x05D<\x86\xaao@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90)\xa6\xeb\xe6\x89{u\xea{:\xf9\xf7\xe4\xfef/@\x8aDkX^\xd6\x95\tX\xd2\x7f\x9a\x00_,\x91\xbc%\x85\x18^Y\xd7\\\x12\xcf8\xd0\x16y\xe0\x08\x11\xbe\xfca\x03\xbf@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x015w\xffm\x8a"K\x14t\xc1\xa1=1m\x87\x00W\xdf\x1e\xad\xfc\x19F>y\x13\xb4/h\xc7>\x8b\xfb\xdcl\x1c_^\x1fvM\x91\xde\\\x16\x0b\xaf\x05\xd7\xdf\x10\x02\xbbm\xba\x10>\xe2\xc1\\\x0b\x85p\xad\xe5\xdd8\x8e>\x06\x1ek\xed\x91\xb2\'=\x9a1]E\xd9o\xcbee\x8a:WDu=\xb3\x1d\xdd\x80\x1e\xd6[\x97WL?\x8c\xfa\x90X\n\xed@\xae|\xfc\xfc_\xa3\xf6\xaeZ7\xbf\xb2\xb4\xd1\xaf[\xf97\x8b\xbd\xad\x0bn\xa8g\xa8\x98:\xdd\xc4N\xde\xa8\xc2\x18\xf6`\x1d\xfe:\xb1OS\xef_\xd1\xab\xc7\x0e\xd1\x07_\x9b\xfa\xdf\xfbS\x1aS^\xaa\xa8\xf5\xf6\xa6\xe1\xd2]\xc6I`\xd2z\x8b\xf6\xa6\xe2\x92\xdb\x0b\xf6\xa6\xb1\xa6x\x18\xfbR\xf9\xe9\x19\xaa\x81\x16\xd68\xc6\x82\xaeC\xfd\xa9\x83\xcdf\xb0\xa8\x83|\xf6\xfd(\x17\x94\xcbmJ\x08\x02q@\xb9q\xa6n\x08*b\xd1\xbf@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 4096, consumed 3 bytes
+2026-06-18 13:13:21,390 | DEBUG | table.py | 201 | Resizing header table to 4096 from 4096
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 8, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 569 | Decoded (b':status', b'200'), consumed 1
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 33, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'date', b'Thu, 18 Jun 2026 16:13:21 GMT'), total consumed 24 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 31, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 22, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 30, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 4, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'content-range', b'0-2/*'), total consumed 6 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'cf-ray', b'a0db94b1bf4606a3-GIG'), total consumed 23 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 6, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 3, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 647 | Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 29, consumed 1 bytes
+2026-06-18 13:13:21,390 | DEBUG | hpack.py | 113 | Decoded 42, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), total consumed 44 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 54, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 7, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 56, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 32, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 59, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'vary', b'Accept-Encoding'), total consumed 13 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 11, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'content-profile', b'public'), total consumed 19 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 13, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'sb-gateway-version', <memory at 0x000002440D28D3C0>), total consumed 17 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), total consumed 29 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 10, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 26, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'sb-request-id', b'019edb82-2b18-7762-8640-88020b99b107'), total consumed 39 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 15, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-attempt-count', <memory at 0x000002440D28D840>), total consumed 19 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 21, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 1, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 647 | Decoded (b'x-envoy-upstream-service-time', <memory at 0x000002440D28D600>), total consumed 25 bytes, indexed True
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 55, consumed 1 bytes
+2026-06-18 13:13:21,391 | DEBUG | hpack.py | 113 | Decoded 236, consumed 2 bytes
+2026-06-18 13:13:21,392 | DEBUG | hpack.py | 647 | Decoded (b'set-cookie', b'__cf_bm=MtjGRAE1.TbOTU3sHYItR18MHhMDT650V9.AzrgI7WU-1781799201.5571096-1.0.1.1-x7NGoaUiaKD5c5ctLrMGBsBfDfrpe_bm.sbn8QHBQ0aR35fOjFX3yd2Ee7n0phLYwDlZnWMT9QptlPP9IT2vu42ROAhncEkBGcqylF1bQEaDVOGhn98DMOwUq_1PxDP9; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:43:21 GMT'), total consumed 239 bytes, indexed True
+2026-06-18 13:13:21,392 | DEBUG | hpack.py | 113 | Decoded 5, consumed 1 bytes
+2026-06-18 13:13:21,392 | DEBUG | hpack.py | 113 | Decoded 16, consumed 1 bytes
+2026-06-18 13:13:21,392 | DEBUG | hpack.py | 647 | Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2026-06-18 13:13:21,392 | DEBUG | _trace.py | 47 | receive_response_headers.complete return_value=(200, [(b'date', b'Thu, 18 Jun 2026 16:13:21 GMT'), (b'content-type', b'application/json; charset=utf-8'), (b'content-range', b'0-2/*'), (b'cf-ray', b'a0db94b1bf4606a3-GIG'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'content-location', b'/contatos?ativo=eq.True&select=id%2Cnome%2Ctelefone%2Cativo'), (b'server', b'cloudflare'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Accept-Encoding'), (b'x-content-type-options', b'nosniff'), (b'content-profile', b'public'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'eigkxlfqkkorkxzxoxge'), (b'sb-request-id', b'019edb82-2b18-7762-8640-88020b99b107'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'5'), (b'set-cookie', b'__cf_bm=MtjGRAE1.TbOTU3sHYItR18MHhMDT650V9.AzrgI7WU-1781799201.5571096-1.0.1.1-x7NGoaUiaKD5c5ctLrMGBsBfDfrpe_bm.sbn8QHBQ0aR35fOjFX3yd2Ee7n0phLYwDlZnWMT9QptlPP9IT2vu42ROAhncEkBGcqylF1bQEaDVOGhn98DMOwUq_1PxDP9; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 18 Jun 2026 16:43:21 GMT'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-06-18 13:13:21,392 | INFO | _client.py | 1025 | HTTP Request: GET https://eigkxlfqkkorkxzxoxge.supabase.co/rest/v1/contatos?select=id%2Cnome%2Ctelefone%2Cativo&ativo=eq.True "HTTP/2 200 OK"
+2026-06-18 13:13:21,392 | DEBUG | _trace.py | 47 | receive_response_body.started request=<Request [b'GET']> stream_id=1
+2026-06-18 13:13:21,393 | DEBUG | _trace.py | 47 | receive_response_body.complete
+2026-06-18 13:13:21,393 | DEBUG | _trace.py | 47 | response_closed.started stream_id=1
+2026-06-18 13:13:21,393 | DEBUG | _trace.py | 47 | response_closed.complete
+2026-06-18 13:13:21,393 | INFO | main.py | 132 | Total de contatos selecionados: 3
+2026-06-18 13:13:21,393 | INFO | main.py | 144 | Verificando status da instância Z-API...
+2026-06-18 13:13:21,395 | DEBUG | connectionpool.py | 1049 | Starting new HTTPS connection (1): api.z-api.io:443
+2026-06-18 13:13:21,880 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "GET /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/status HTTP/1.1" 200 122
+2026-06-18 13:13:21,880 | INFO | main.py | 154 | Z-API status | connected=True | smartphoneConnected=True | detail=You are already connected.
+2026-06-18 13:13:21,880 | INFO | main.py | 240 | Enviando mensagem para Joyciane Cavalcante (5585996633730)...
+2026-06-18 13:13:22,097 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 108
+2026-06-18 13:13:22,097 | INFO | main.py | 245 | Envio OK para 5585996633730 | resposta={'zaapId': '019EDB822D7C73579F595CEC02E65CD8', 'messageId': 'C452579068F280DBC2C8', 'id': 'C452579068F280DBC2C8'}
+2026-06-18 13:13:22,097 | INFO | main.py | 240 | Enviando mensagem para Wesley Corpes (5598984250605)...
+2026-06-18 13:13:22,161 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 112
+2026-06-18 13:13:22,161 | INFO | main.py | 245 | Envio OK para 5598984250605 | resposta={'zaapId': '019EDB822E35728797C5A46D9B6E302E', 'messageId': '3EB0BF04568AB84EA89AC8', 'id': '3EB0BF04568AB84EA89AC8'}
+2026-06-18 13:13:22,161 | INFO | main.py | 240 | Enviando mensagem para Elton Morais (5585920015464)...
+2026-06-18 13:13:22,222 | DEBUG | connectionpool.py | 544 | https://api.z-api.io:443 "POST /instances/3F4CBF801119011B21344EE998918E2A/token/56F998A0A9693C4028BE9C2E/send-text HTTP/1.1" 200 112
+2026-06-18 13:13:22,222 | INFO | main.py | 245 | Envio OK para 5585920015464 | resposta={'zaapId': '019EDB822E7573EB85E914EAADF180AA', 'messageId': '3EB00C93038FFA62E126BE', 'id': '3EB00C93038FFA62E126BE'}
+2026-06-18 13:13:22,223 | INFO | main.py | 254 | Processo finalizado. Total enviado com sucesso: 3
